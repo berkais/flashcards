@@ -19,7 +19,8 @@ class App extends Component {
           front="Front side 3"
           back="Back side 3"
         />
-     </div>
+        <Card />
+      </div>
     );
   }
 }

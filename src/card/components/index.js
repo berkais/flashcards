@@ -4,7 +4,7 @@ import '../css/card.css';
 class Card extends Component {
   constructor(props) {
     super(props);
-    this.state = {front: true};
+    this.state = { front: true };
   }
 
   flipCard() {
@@ -14,11 +14,11 @@ class Card extends Component {
   }
 
   renderFrontSide() {
-    return this.props.front;
+    return this.props.front || '';
   }
 
   renderBackSide() {
-    return this.props.back;
+    return this.props.back || '';
   }
 
   render() {
@@ -26,8 +26,8 @@ class Card extends Component {
       <div className="card" onClick={() => this.flipCard()}>
         {
           this.state.side
-          ? this.renderFrontSide()
-          : this.renderBackSide()
+            ? this.renderFrontSide()
+            : this.renderBackSide()
         }
       </div>
     );
