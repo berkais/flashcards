@@ -14,11 +14,11 @@ class Card extends Component {
   }
 
   renderFrontSide() {
-    return 'front';
+    return this.props.front;
   }
 
   renderBackSide() {
-    return 'back';
+    return this.props.back;
   }
 
   render() {

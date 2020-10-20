@@ -6,7 +6,20 @@ import Card from './card/components'
 class App extends Component {
   render() {
     return (
-     <Card />
+      <div className="cards">
+        <Card
+          front="Front side 1"
+          back="Back side 1"
+        />
+        <Card
+          front="Front side 2"
+          back="Back side 2"
+        />
+        <Card
+          front="Front side 3"
+          back="Back side 3"
+        />
+     </div>
     );
   }
 }
